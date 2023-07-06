@@ -1,0 +1,36 @@
+.header {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  grid-area: header;
+}
+
+.title {
+  flex-direction: column;
+  line-height: 10px;
+  color: rgb(84, 137, 218);
+  max-width: 1200px;
+  padding: 15px;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+}
+
+.menu li:hover .links {
+  color: rgb(84, 137, 218);
+  transition: 0.4s;
+  text-decoration: none;
+}
