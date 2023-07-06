@@ -8,7 +8,6 @@ export const ListaPerguntas = () => {
   const [indicePerguntaAtual, setIndicePerguntaAtual] = useState(0);
   const [qtdAcertos, setQtdAcertos] = useState(0);
   const [radioValue, setRadioValue] = useState("");
-  let acertos = 0;
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -27,19 +26,18 @@ export const ListaPerguntas = () => {
     getTesteSelecionado();
   }, []);
 
-  const handleProximaPergunta = () => {
+  const handleProximaPergunta = (e) => {
     const perguntaAtual = testeSelecionado.perguntas[indicePerguntaAtual];
-    console.log("passando aki tbm");
 
     if (radioValue === perguntaAtual.resposta) {
       setQtdAcertos(qtdAcertos + 1);
-      console.log("passando aqui");
     }
     setRadioValue("");
 
     if (indicePerguntaAtual < testeSelecionado.perguntas.length - 1) {
       setIndicePerguntaAtual(indicePerguntaAtual + 1);
     } else {
+      e.preventDefault();
       localStorage.setItem("qtdAcertos", qtdAcertos);
       navigate("/apresenta-resultado");
     }

@@ -21,6 +21,11 @@ export const Header = () => {
               Cadastro
             </Link>
           </li>
+          <li>
+            <Link className="links" to="/crud-testes">
+              Testes
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

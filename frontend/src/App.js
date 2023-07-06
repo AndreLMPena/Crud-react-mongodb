@@ -11,6 +11,7 @@ import { ListaResultados } from "./pages/ListaResultados";
 import { ListaTestes } from "./pages/ListaTestes";
 import { Login } from "./pages/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { CrudTestes } from "./pages/CrudTestes";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/lista-testes" exact element={<ListaTestes />} />
           <Route path="/login" exact element={<Login />} />
           <Route path="/crud-usuarios" exact element={<CrudUsuarios />} />
+          <Route path="/crud-testes" exact element={<CrudTestes />} />
         </Routes>
       </div>
     </Router>

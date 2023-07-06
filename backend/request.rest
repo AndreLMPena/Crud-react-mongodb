@@ -59,25 +59,25 @@ POST http://localhost:3001/api/testes
 Content-Type: application/json
 
 {
-    "teste": "Teste da DC",
+    "teste": "Teste de One Piece",
     "perguntas": [
       {
-        "pergunta": "Qual desses personagens não faz parte da Bat-Família?",
-        "opcaoA": "Alfred Pennyworth",
-        "opcaoB": "Dick Grayson",
-        "opcaoC": "Barbara Gordon",
-        "opcaoD": "Selina Kyle",
-        "opcaoE": "Barry Allen",
+        "pergunta": "Qual desses personagens não faz parte da pior geração?",
+        "opcaoA": "Monkey D Luffy",
+        "opcaoB": "Roronoa Zoro",
+        "opcaoC": "Trafalgar Law",
+        "opcaoD": "Eustass Kidd",
+        "opcaoE": "Vinsmoke Sanji",
         "resposta": "opcaoE"
       },
       {
-        "pergunta": "Qual desses heróis não faz parte da formação classica da Liga da Justiça?",
-        "opcaoA": "Superman",
-        "opcaoB": "Shazam",
-        "opcaoC": "Batman",
-        "opcaoD": "Mulher Maravilha",
-        "opcaoE": "Lanterna Verde",
-        "resposta": "opcaoB"
+        "pergunta": "Qual desses personagens nunca foram um dos 7 corsários?",
+        "opcaoA": "Donquixote Doflamingo",
+        "opcaoB": "Boa Hancock",
+        "opcaoC": "Sir Crocodile",
+        "opcaoD": "Portgas D Ace",
+        "opcaoE": "Dracule Mihawk",
+        "resposta": "opcaoD"
       }
     ]
   }

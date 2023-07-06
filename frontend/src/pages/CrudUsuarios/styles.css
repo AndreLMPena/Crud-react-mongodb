@@ -129,10 +129,10 @@
   font-size: 20px;
 }
 .tableIcons .edit-btn {
-  background-color: red;
-  padding-right: 10px;
+  color: rgb(0, 0, 0);
+  padding: 0px 5px;
 }
 .tableIcons .delete-btn {
-  background-color: blue;
-  padding-left: 10px;
+  color: red;
+  padding: 0px 5px;
 }
